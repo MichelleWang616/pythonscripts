@@ -1,0 +1,40 @@
+Custom fonts may not work on Android 5.0. See the following link for details:
+https://code.google.com/p/android-developer-preview/issues/detail?id=608&thanks=608&ts=1404735239
+
+This tool are used to verify and fix fonts for android developers.
+
+OTS tool and TTX tool only works for Mac OS since these tools were built for MAC. Please build Windows version if you are working on Windows.
+The re-encode script is written in Python and should work on all platforms.
+
+********************************************
+            Directory Overview
+********************************************
+----ot-sanitise
+----ttx
+----batch_reencode_script.py
+----srcFonts
+         FontFolder1
+             font1
+             font2
+         FontFolder2
+             font3
+----dstFonts
+         FontFolder1
+             font1
+             font2
+         FontFolder2
+             font3
+
+********************************************
+    Use ot-sanitise to valid fonts
+********************************************
+./ot-sanitise fontFile
+
+
+********************************************
+       Steps to Reencode the fonts
+********************************************
+1. Put all your font in the srcFonts folder
+2. Run python batch_reencode_script.py
+3. All the reencoded fonts are in dstFonts folder
+
